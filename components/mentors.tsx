@@ -15,6 +15,18 @@ import {
   PaletteIcon
 } from "lucide-react"
 
+interface Mentor {
+  name: string
+  title: string
+  education: string
+  tags: string[]
+  avatar_svg: string
+  avatar_png: string
+  avatar_alt: string
+  summary: string
+  expertise: string[]
+}
+
 const Mentors = () => {
   const getIconForTag = (tag: string) => {
     switch(tag) {
@@ -54,7 +66,7 @@ const Mentors = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
-          {courseData.mentors.map((mentor, index) => (
+          {(courseData.mentors as Mentor[]).map((mentor, index) => (
             <Card 
               key={index}
               className="group relative overflow-hidden hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border-muted/50 bg-gradient-to-br from-background to-muted/10 animate-slide-in"
