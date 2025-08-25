@@ -7,6 +7,13 @@ export const metadata: Metadata = {
   title: "大学生AI+项目系统化培训课程大纲",
   description: "帮助大学生从AI基础认知到项目落地，循序渐进地拓宽思维、掌握主流AI工具与方法，并在五大方向中选定项目，最终实现成果落地。",
   keywords: ["AI培训", "人工智能", "大学生项目", "AI工具", "机器学习"],
+  icons: {
+    icon: [
+      { url: '/icon.svg', type: 'image/svg+xml' },
+      { url: '/favicon.ico', sizes: 'any' },
+    ],
+    apple: '/apple-icon.png',
+  },
   openGraph: {
     title: "大学生AI+项目系统化培训课程大纲",
     description: "帮助大学生从AI基础认知到项目落地，循序渐进地拓宽思维、掌握主流AI工具与方法",
